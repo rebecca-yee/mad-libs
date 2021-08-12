@@ -12,6 +12,138 @@
       In the form below, enter the correct part of speech indicated to create
       your own story!
     </p>
-    <form action="final.html" method="GET"></form>
+    <form action="final.html" method="GET">
+      <label for="adj1">Adjective:</label>
+      <input
+        id="adj1"
+        name="adj1"
+        type="text"
+        placeholder="Ex: little"
+        required
+      />
+      <br />
+      <label for="verb1">Verb:</label>
+      <input
+        id="verb1"
+        name="verb1"
+        type="text"
+        placeholder="Ex: run"
+        required
+      />
+      <br />
+      <span>Choose another verb:</span>
+      <input
+        id="sleep"
+        type="radio"
+        name="verb2"
+        value="sleep"
+        required
+        checked
+      />
+      <label for="sleep">Sleep</label>
+      <input id="eat" type="radio" name="verb2" value="eat" required />
+      <label for="eat">Eat</label>
+      <input id="play" type="radio" name="verb2" value="play" required />
+      <label for="play">Play</label>
+      <br />
+      <label for="verb3">Choose one more verb (or think of your own!):</label>
+      <select id="verb3" name="verb3" required>
+        <option value="kick">Kick</option>
+        <option value="blow">Blow</option>
+        <option value="punch">Punch</option>
+      </select>
+      <br />
+      <label for="plnoun1">Plural noun:</label>
+      <input
+        id="plnoun1"
+        name="plnoun1"
+        type="text"
+        placeholder="Ex: sticks"
+        required
+      />
+      <br />
+      <label for="plnoun2">Another plural noun:</label>
+      <input
+        id="plnoun2"
+        name="plnoun2"
+        type="text"
+        placeholder="Ex: leaves"
+        required
+      />
+      <br />
+      <label for="plnoun3">One more plural noun:</label>
+      <input
+        id="plnoun3"
+        name="plnoun3"
+        type="text"
+        placeholder="Ex: bricks"
+        required
+      />
+      <br />
+      <span>Choose a past tense verb:</span>
+      <input
+        id="blew"
+        type="radio"
+        name="pastverb1"
+        value="blew"
+        required
+        checked
+      />
+      <label for="blew">Blew</label>
+      <input
+        id="knocked"
+        type="radio"
+        name="pastverb1"
+        value="knocked"
+        required
+      />
+      <label for="knocked">Knocked</label>
+      <input
+        id="punched"
+        type="radio"
+        name="pastverb1"
+        value="punched"
+        required
+      />
+      <label for="punched">Punched</label>
+      <br />
+      <span>Choose another past tense verb:</span>
+      <input
+        id="lived"
+        type="radio"
+        name="pastverb2"
+        value="lived"
+        required
+        checked
+      />
+      <label for="lived">Lived</label>
+      <input
+        id="played"
+        type="radio"
+        name="pastverb2"
+        value="played"
+        required
+      />
+      <label for="played">Eat</label>
+      <input
+        id="laughed"
+        type="radio"
+        name="pastverb2"
+        value="laughed"
+        required
+      />
+      <label for="laughed">Laughed</label>
+      <br />
+      <label for="number">Number:</label>
+      <input
+        id="number"
+        type="number"
+        name="number"
+        placeholder="ex: 4"
+        required
+      />
+      <br />
+      <input type="submit" value="Create my story!" />
+    </form>
   </body>
 </html>
