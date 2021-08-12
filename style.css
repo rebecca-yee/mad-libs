@@ -1,5 +1,5 @@
 body {
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Balsamiq Sans", sans-serif;
   background-color: #ffffbf;
   text-align: center;
 }
@@ -18,7 +18,7 @@ form {
 }
 
 input::placeholder {
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Balsamiq Sans", sans-serif;
 }
 
 input[type="text"],
@@ -27,7 +27,7 @@ select {
   margin-left: 5px;
   border-radius: 5px;
   border: 2px solid rgb(255, 102, 0);
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Balsamiq Sans", sans-serif;
   background-color: white;
 }
 
@@ -38,7 +38,7 @@ input[type="radio"] {
 input[type="submit"] {
   border-radius: 5px;
   border: 4px solid rgb(255, 102, 0);
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Balsamiq Sans", sans-serif;
   padding: 10px;
   background-color: white;
   font-size: 20px;
