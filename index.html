@@ -5,22 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <h1>Welcome to Mad Libs!</h1>
-    <p>
-      In the form below, enter the correct part of speech indicated to create
-      your own story!
-    </p>
+    <p>In the form below, fill in the information to create your own story!</p>
     <form action="final.html" method="GET">
-      <label for="adj1">Adjective:</label>
-      <input
-        id="adj1"
-        name="adj1"
-        type="text"
-        placeholder="Ex: little"
-        required
-      />
+      <label for="adj">Adjective:</label>
+      <input id="adj" name="adj" type="text" placeholder="Ex: happy" required />
       <br />
       <label for="verb1">Verb:</label>
       <input
@@ -46,13 +38,6 @@
       <input id="play" type="radio" name="verb2" value="play" required />
       <label for="play">Play</label>
       <br />
-      <label for="verb3">Choose one more verb (or think of your own!):</label>
-      <select id="verb3" name="verb3" required>
-        <option value="kick">Kick</option>
-        <option value="blow">Blow</option>
-        <option value="punch">Punch</option>
-      </select>
-      <br />
       <label for="plnoun1">Plural noun:</label>
       <input
         id="plnoun1"
@@ -67,7 +52,7 @@
         id="plnoun2"
         name="plnoun2"
         type="text"
-        placeholder="Ex: leaves"
+        placeholder="Ex: balls"
         required
       />
       <br />
@@ -76,7 +61,7 @@
         id="plnoun3"
         name="plnoun3"
         type="text"
-        placeholder="Ex: bricks"
+        placeholder="Ex: books"
         required
       />
       <br />
@@ -107,39 +92,35 @@
       />
       <label for="punched">Punched</label>
       <br />
-      <span>Choose another past tense verb:</span>
-      <input
-        id="lived"
-        type="radio"
-        name="pastverb2"
-        value="lived"
-        required
-        checked
-      />
-      <label for="lived">Lived</label>
-      <input
-        id="played"
-        type="radio"
-        name="pastverb2"
-        value="played"
-        required
-      />
-      <label for="played">Eat</label>
-      <input
-        id="laughed"
-        type="radio"
-        name="pastverb2"
-        value="laughed"
-        required
-      />
-      <label for="laughed">Laughed</label>
+      <label for="pastverb2">Choose another past tense verb:</label>
+      <select id="pastverb2" name="pastverb2" required>
+        <option value="lived">Lived</option>
+        <option value="played">Played</option>
+        <option value="laughed">Laughed</option>
+      </select>
       <br />
       <label for="number">Number:</label>
       <input
         id="number"
         type="number"
         name="number"
+        step="1"
         placeholder="ex: 4"
+        required
+      />
+      <br />
+      <span>Yes or no?</span>
+      <input id="yes" type="radio" name="answer" value="yes" required checked />
+      <label for="yes">Yes</label>
+      <input id="no" type="radio" name="answer" value="no" required />
+      <label for="no">No</label>
+      <br />
+      <label for="animal">And lastly, what's your favorite animal?</label>
+      <input
+        id="animal"
+        type="text"
+        name="animal"
+        placeholder="Ex: dog"
         required
       />
       <br />
